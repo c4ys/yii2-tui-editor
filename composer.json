@@ -1,0 +1,21 @@
+{
+    "name": "c4ys/yii2-tui-editor",
+    "description": "Markdown WYSIWYG Editor. GFM Standard + Chart & UML Extensible. http://ui.toast.com/tui-editor",
+    "type": "yii2-extension",
+    "keywords": ["yii2","tuieditor","WYSIWYG","editor"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ning",
+            "email": "15996204@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "c4ys\\tuieditor\\": ""
+        }
+    }
+}
