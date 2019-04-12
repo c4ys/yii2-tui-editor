@@ -13,10 +13,9 @@ Either run
 php composer.phar require --prefer-dist c4ys/yii2-tui-editor "*"
 ```
 
-or add
 
 ```
-"c4ys/yii2-tui-editor": "*"
+"c4ys/yii2-tui-editor": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,4 +27,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \c4ys\tuieditor\AutoloadExample::widget(); ?>```
+<?= \c4ys\tuieditor\TuiEditorAsset::widget(); ?>```
