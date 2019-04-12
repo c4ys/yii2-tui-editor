@@ -1,30 +1,34 @@
-Markdown WYSIWYG Editor base on tui.editor
+Yii Markdown WYSIWYG Editor
 ==========================================
-Markdown WYSIWYG Editor. GFM Standard + Chart & UML Extensible. http://ui.toast.com/tui-editor
+Markdown WYSIWYG Editor  http://ui.toast.com/tui-editor
 
 Installation
 ------------
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
-
-Either run
+修改composer.json
 
 ```
-php composer.phar require --prefer-dist c4ys/yii2-tui-editor "*"
-```
+"repositories": [
+    {
+      "url": "https://github.com/c4ys/yii2-tui-editor.git",
+      "type": "vcs"
+    }
+  ]
 
-
-```
 "c4ys/yii2-tui-editor": "dev-master"
 ```
 
-to the require section of your `composer.json` file.
+运行
+
+```bash
+composer update
+```
 
 
-Usage
+用法
 -----
 
-Once the extension is installed, simply use it in your code by  :
-
 ```php
-<?= \c4ys\tuieditor\TuiEditorAsset::widget(); ?>```
+ <?= $form->field($model, 'desc')->widget(\c4ys\tuieditor\TuiEditor::class) ?>
+
+```
